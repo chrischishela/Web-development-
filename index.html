@@ -1,70 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merg Signature</title>
+  <style>
+    /* Styling for the full-page layout */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-<style>
+    /* Full-page background image as a watermark */
+    .wrapper {
+      position: relative;
+      min-height: 100vh;
+      background: url('images/watermark.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
 
-.p{
-  font-family: Arial;
-  text-align: center;
+    /* Centering content on the page */
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 90%;
+    }
 
-}
-.New{
-  color: rgb(242, 173, 44);
-  text-align: center;
-  font-weight: bold;
-  font-size:20px;
-  height: 0px;
-}
-.button{
-  border-radius:8px;
-  color: white;
-  background-color: rgb(2, 86, 231);
-  text-align: cebt;
-  margin-left: 5px;
-  
-}
-.mac{
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom:0;
-}
-.super{
-  font-weight: bold;
-  font-size: 50px;
-  text-align: center;
-  margin-top: 0;
-}
+    /* Main heading */
+    .MERG {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
-.from{
-  text-align: center;
-}
+    /* Subheading */
+    .FREE {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
 
+    /* Input fields */
+    .FIRST, .email {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
 
-</style>
+    /* Button styling */
+    .sign {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: rgb(41, 94, 227);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: opacity 0.15s ease-in-out;
+    }
 
-<p class="New">
-  New
-
-</p>
-
-<p class="mac">
-  MacBook Pro 
-
-</p>
-<p class="super">
-  Supercharged for pros.
-
-</p>
-<p class="from">
-  from $1999
-
-</p>
-
-<b class="button"> 
-  
-  Buy
-
-</b>
-<p>
-  sale sale, its a special sale for u guys the luck winner gets to go with the monthly special sales of 50milion kwacha best of luck to all paticipant on this day 
-</p>
-
+    /* Hover effect for the button */
+    .sign:hover {
+      opacity: 0.9;
+    }
+    
+    .LAST{
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Wrapper for the watermark -->
+  <div class="wrapper">
+    <!-- Content section -->
+    <div class="content">
+      <p class="MERG">Welcome to Mergsignature</p>
+      
+      <input class="FIRST" type="text" placeholder="First name">
+      <input class="LAST" type="text" placeholder="Last name">
+      <input class="email" type="email" placeholder="Email">
+      <button class="sign">Sign up</button>
+    </div>
+  </div>
+</body>
+</html>
