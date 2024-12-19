@@ -48,7 +48,7 @@
     }
 
     /* Input fields */
-    .FIRST, .email, .LAST {
+    .FIRST, .email {
       width: 100%;
       padding: 10px;
       margin-bottom: 10px;
@@ -75,6 +75,15 @@
     .sign:hover {
       opacity: 0.9;
     }
+    
+    .LAST{
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
@@ -83,6 +92,7 @@
     <!-- Content section -->
     <div class="content">
       <p class="MERG">Welcome to Mergsignature</p>
+      
       <input class="FIRST" type="text" placeholder="First name">
       <input class="LAST" type="text" placeholder="Last name">
       <input class="email" type="email" placeholder="Email">
